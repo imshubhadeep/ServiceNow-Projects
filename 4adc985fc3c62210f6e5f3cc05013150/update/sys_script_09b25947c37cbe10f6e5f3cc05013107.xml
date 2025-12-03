@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1130583_custom_a_dgroup_demo</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Department of Created By</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// (function executeRule(current, previous /*null when async*/) {
+//    // Check if sys_created_by has value
+//    if (current.sys_created_by) {
+//        var userGR = new GlideRecord('sys_user');
+//        userGR.addQuery('user_name', current.sys_created_by);  // because sys_created_by stores username
+//        userGR.query();
+//        if (userGR.next()) {
+//            current.u_dept_user = userGR.department.name;
+//        } else {
+//            current.u_dept_user = ''; // no match
+//        }
+//    }
+// })(current, previous);
+
+
+// (function executeRule(current, previous /*null when async*/) {
+//     // Populate department of Assignee
+//     if (current.u_assignee) {
+//         var assigneeGR = new GlideRecord('sys_user');
+//         if (assigneeGR.get(current.u_assignee)) {
+//             var deptID = assigneeGR.getValue('department');
+//             if (deptID) {
+//                 var deptGR = new GlideRecord('cmn_department');
+//                 if (deptGR.get(deptID)) {
+//                     current.u_dept_assignee = deptGR.getValue('name');
+//                 }
+//             }
+//         }
+//     } else {
+//         current.u_dept_assignee = '';
+//     }
+
+//     // Populate department of Created By (sys_created_by)
+//     if (current.sys_created_by) {
+//         var createdByGR = new GlideRecord('sys_user');
+//         createdByGR.addQuery('user_name', current.sys_created_by);  // sys_created_by stores username
+//         createdByGR.query();
+//         if (createdByGR.next()) {
+//             var createdByDeptID = createdByGR.getValue('department');
+//             if (createdByDeptID) {
+//                 var createdByDeptGR = new GlideRecord('cmn_department');
+//                 if (createdByDeptGR.get(createdByDeptID)) {
+//                     current.u_dept_user = createdByDeptGR.getValue('name');
+//                 }
+//             }
+//         } else {
+//             current.u_dept_user = '';
+//         }
+//     }
+// })(current, previous);
+
+
+
+
+// (function executeRule(current, previous /*null when async*/) {
+//     // Populate department of Assignee
+//     if (current.u_assignee) {
+//         var assigneeGR = new GlideRecord('sys_user');
+//         if (assigneeGR.get(current.u_assignee)) {
+//             var deptID = assigneeGR.getValue('department');
+//             if (deptID) {
+//                 var deptGR = new GlideRecord('cmn_department');
+//                 if (deptGR.get(deptID)) {
+//                     current.u_dept_assignee = deptGR.getValue('name');
+//                 } else {
+//                     current.u_dept_assignee = '';
+//                 }
+//             } else {
+//                 current.u_dept_assignee = '';
+//             }
+//         } else {
+//             current.u_dept_assignee = '';
+//         }
+//     } else {
+//         current.u_dept_assignee = '';
+//     }
+
+//     // Populate department of Created By (sys_created_by)
+//     if (current.sys_created_by) {
+//         var createdByGR = new GlideRecord('sys_user');
+//         createdByGR.addQuery('user_name', current.sys_created_by);  // sys_created_by stores username
+//         createdByGR.query();
+//         if (createdByGR.next()) {
+//             var createdByDeptID = createdByGR.getValue('department');
+//             if (createdByDeptID) {
+//                 var createdByDeptGR = new GlideRecord('cmn_department');
+//                 if (createdByDeptGR.get(createdByDeptID)) {
+//                     current.u_dept_user = createdByDeptGR.getValue('name');
+//                 } else {
+//                     current.u_dept_user = '';
+//                 }
+//             } else {
+//                 current.u_dept_user = '';
+//             }
+//         } else {
+//             current.u_dept_user = '';
+//         }
+//     } else {
+//         current.u_dept_user = '';
+//     }
+// })(current, previous);
+
+
+
+(function executeRule(current, previous /*null when async*/) {
+    function getDeptNameBySysId(userSysId) {
+        var userGR = new GlideRecord('sys_user');
+        if (userGR.get(userSysId)) {
+            var deptID = userGR.getValue('department');
+            if (deptID) {
+                var deptGR = new GlideRecord('cmn_department');
+                if (deptGR.get(deptID)) {
+                    return deptGR.getValue('name');
+                }
+            }
+        }
+        return '';
+    }
+
+    function getDeptNameByUserName(userName) {
+        var userGR = new GlideRecord('sys_user');
+        userGR.addQuery('user_name', userName);
+        userGR.query();
+        if (userGR.next()) {
+            var deptID = userGR.getValue('department');
+            if (deptID) {
+                var deptGR = new GlideRecord('cmn_department');
+                if (deptGR.get(deptID)) {
+                    return deptGR.getValue('name');
+                }
+            }
+        }
+        return '';
+    }
+
+    current.u_dept_assignee = current.u_assignee ? getDeptNameBySysId(current.u_assignee) : '';
+    current.u_dept_user = current.sys_created_by ? getDeptNameByUserName(current.sys_created_by) : '';
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-29 13:34:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09b25947c37cbe10f6e5f3cc05013107</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Set Department of Created By</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_script_09b25947c37cbe10f6e5f3cc05013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-29 17:06:36</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=09b25947c37cbe10f6e5f3cc05013107"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>09b25947c37cbe10f6e5f3cc05013107</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-29 13:34:03</sys_created_on>
+        <sys_id>f053998fc33cbe10f6e5f3cc0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-29 13:34:03</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

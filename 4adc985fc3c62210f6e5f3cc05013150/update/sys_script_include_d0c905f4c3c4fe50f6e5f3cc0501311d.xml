@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1130583_custom_a.GetCurrentUserInfo</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetCurrentUserInfo</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[// Name: GetCurrentUserInfo
+// Client Callable: ✅ Checked
+// Accessible from: All application scopes (if needed globally)
+
+var GetCurrentUserInfo = Class.create();
+GetCurrentUserInfo.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /**
+     * This method returns the current user's sys_id and user_name.
+     * It is called from client-side using GlideAjax.
+     */
+    getUserDetails: function() {
+        var userSysId = gs.getUserID(); // sys_id of the logged-in user
+        var userGR = new GlideRecord('sys_user');
+        
+        if (userGR.get(userSysId)) {
+            var result = {
+                sys_id: userGR.getValue('sys_id'),
+                user_name: userGR.getValue('user_name')
+            };
+            return JSON.stringify(result); // Return as JSON string for client-side parsing
+        }
+
+        return JSON.stringify({}); // Return empty object if user not found
+    },
+
+    type: 'GetCurrentUserInfo'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 06:20:11</sys_created_on>
+        <sys_id>d0c905f4c3c4fe50f6e5f3cc0501311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetCurrentUserInfo</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_script_include_d0c905f4c3c4fe50f6e5f3cc0501311d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 06:20:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

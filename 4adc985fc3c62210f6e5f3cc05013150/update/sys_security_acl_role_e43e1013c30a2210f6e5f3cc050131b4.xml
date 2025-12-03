@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-15 11:27:45</sys_created_on>
+        <sys_id>e43e1013c30a2210f6e5f3cc050131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1130583_custom_a_asset_parent.x_1130583_custom_a.asset_parent_user</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_security_acl display_value="x_1130583_custom_a_asset_parent">283e1013c30a2210f6e5f3cc050131b1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e43e1013c30a2210f6e5f3cc050131b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-15 11:27:45</sys_updated_on>
+        <sys_user_role display_value="x_1130583_custom_a.asset_parent_user" name="x_1130583_custom_a.asset_parent_user">183e50dfc3c62210f6e5f3cc05013145</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

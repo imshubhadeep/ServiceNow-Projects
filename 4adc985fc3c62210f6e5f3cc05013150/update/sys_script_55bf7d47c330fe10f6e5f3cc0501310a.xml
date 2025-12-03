@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1130583_custom_a_dgroup_demo</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>set dept by Assignee</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// (function executeRule(current, previous /*null when async*/) {
+//     if (current.u_assignee) {
+//         var userGR = new GlideRecord('sys_user');
+//         if (userGR.get(current.u_assignee)) {
+//             var deptID = userGR.getValue('department');
+//             if (deptID) {
+//                 var deptGR = new GlideRecord('cmn_department');
+//                 if (deptGR.get(deptID)) {
+//                     current.u_dept_assignee = deptGR.getValue('name');
+//                 }
+//             }
+//         }
+//     } else {
+//         current.u_dept_assignee = '';
+//     }
+// })(current, previous);
+
+
+// (function executeRule(current) {
+//     // Check if reference field is populated
+//     if (current.u_created_user_master) {
+//         var userMaster = new GlideRecord('x_1130583_custom_a_user_master_document');
+//         if (userMaster.get(current.u_created_user_master)) {
+//             current.u_user_master_created_date = userMaster.sys_created_on;
+//         }
+//     } else {
+//         // Clear the field if reference is removed
+//         current.u_user_master_created_date = '';
+//     }
+// })(current);
+// ``
+
+
+(function executeRule(current) {
+
+    var refSysId = current.u_created_date_from_user_master;
+    if (refSysId) {
+        var gr = new GlideRecord('x_1130583_custom_a_user_master_document');
+        if (gr.get(refSysId)) {
+            current.u_created_date_from_user_master = gr.sys_created_on; // Assign the value
+        }
+    }
+
+})(current);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-29 16:48:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55bf7d47c330fe10f6e5f3cc0501310a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>set dept by Assignee</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_script_55bf7d47c330fe10f6e5f3cc0501310a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-04 14:36:42</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=55bf7d47c330fe10f6e5f3cc0501310a"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>55bf7d47c330fe10f6e5f3cc0501310a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-29 16:48:51</sys_created_on>
+        <sys_id>16efb10fc330fe10f6e5f3cc05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-29 16:48:51</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

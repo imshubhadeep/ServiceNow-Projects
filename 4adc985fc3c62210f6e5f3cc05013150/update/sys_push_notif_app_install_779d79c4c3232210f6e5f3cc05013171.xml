@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2025-08-20 20:25:15</last_registered_on>
+        <send_badge_count>true</send_badge_count>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 05:38:35</sys_created_on>
+        <sys_id>779d79c4c3232210f6e5f3cc05013171</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>d27tkuzOQs-xhifGaBm1td:APA91bGnz2OA4jbG6g6wAQcT2J-vJSJotSD99LU0W-ZY1WAiXpJS-XItCEDn2YxJso4aGJ8OZ37iAdApp-ijvs4YQYX2fLJQDDI0fpZizrmHPt6LYgUlbp0</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Request Application">ac7f61d273122300d63a566a4cf6a78b</sys_push_application_id>
+        <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_779d79c4c3232210f6e5f3cc05013171</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 20:25:15</sys_updated_on>
+        <sys_user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user_id>
+        <token>d27tkuzOQs-xhifGaBm1td:APA91bGnz2OA4jbG6g6wAQcT2J-vJSJotSD99LU0W-ZY1WAiXpJS-XItCEDn2YxJso4aGJ8OZ37iAdApp-ijvs4YQYX2fLJQDDI0fpZizrmHPt6LYgUlbp0</token>
+    </sys_push_notif_app_install>
+</record_update>

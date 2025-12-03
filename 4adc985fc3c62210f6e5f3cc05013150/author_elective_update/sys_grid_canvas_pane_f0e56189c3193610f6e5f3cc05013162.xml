@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="New Tab 1">a2747593c3a3a610f6e5f3cc05013134</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2025-11-16 22:18:42">34e5258dc3953610f6e5f3cc0501310d</portal_widget>
+        <posx>0</posx>
+        <posy>10</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-17 06:18:42</sys_created_on>
+        <sys_id>f0e56189c3193610f6e5f3cc05013162</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>a2747593c3a3a610f6e5f3cc05013134</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_f0e56189c3193610f6e5f3cc05013162</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-17 07:43:38</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</application>
+        <file_path/>
+        <instance_id>7d33805c3bbf8ad4986d048aa4e45ae4</instance_id>
+        <instance_name>dev283179</instance_name>
+        <name>sys_grid_canvas_pane_f0e56189c3193610f6e5f3cc05013162</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="New Tab 1">a2747593c3a3a610f6e5f3cc05013134</grid_canvas><height>10</height><portal_widget display_value="Created 2025-11-16 22:18:42">34e5258dc3953610f6e5f3cc0501310d</portal_widget><posx>0</posx><posy>10</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-17 06:18:42</sys_created_on><sys_id>f0e56189c3193610f6e5f3cc05013162</sys_id><sys_mod_count>5</sys_mod_count><sys_name>a2747593c3a3a610f6e5f3cc05013134</sys_name><sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package><sys_policy/><sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope><sys_update_name>sys_grid_canvas_pane_f0e56189c3193610f6e5f3cc05013162</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-17 07:43:38</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-914807494</payload_hash>
+        <record_name>a2747593c3a3a610f6e5f3cc05013134</record_name>
+        <reverted_from/>
+        <source>46608ef1c3c5f610f6e5f3cc05013168</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-17 07:43:38</sys_created_on>
+        <sys_id>0159f141c3993610f6e5f3cc050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a90c4f61e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-17 07:43:38</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>895931015099361074b34bf9eab8b48b</update_guid>
+        <update_guid_history>895931015099361074b34bf9eab8b48b:-914807494,b3497901ab9936108ae685986b14adcd:-1439688957,5ef8b9014b99361066d409eae93bcbd3:-914807494,06e8f189a21936108cb29d45d3e21c39:-1439688957,dfd879011899361021974691ab3a7b65:-914807494,bce5618964193610f85b57b76b647963:-1439688957</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-17 07:43:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>22e9f199ffc4485485fb6d94f1c64510</sys_id>
+        <sys_metadata>f0e56189c3193610f6e5f3cc05013162</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a2747593c3a3a610f6e5f3cc05013134</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_scope_delete display_value="">216aad2cb7864bd48a408ee74b5b0210</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_f0e56189c3193610f6e5f3cc05013162</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_f0e56189c3193610f6e5f3cc05013162">0159f141c3993610f6e5f3cc050131bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-17 07:43:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

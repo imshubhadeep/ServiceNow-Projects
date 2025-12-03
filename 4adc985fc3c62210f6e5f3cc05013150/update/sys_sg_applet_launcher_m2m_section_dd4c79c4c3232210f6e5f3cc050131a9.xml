@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="Dai-Ichi">514c79c4c3232210f6e5f3cc050131a3</applet_launcher>
+        <order>2147483647</order>
+        <section display_value="Quick Links">514c79c4c3232210f6e5f3cc050131a8</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-19 05:32:41</sys_created_on>
+        <sys_id>dd4c79c4c3232210f6e5f3cc050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_dd4c79c4c3232210f6e5f3cc050131a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-19 05:32:41</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

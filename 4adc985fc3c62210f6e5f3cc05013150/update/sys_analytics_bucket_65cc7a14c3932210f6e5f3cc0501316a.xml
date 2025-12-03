@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="INSERT_OR_UPDATE">
+        <analytics_channel display_value="mobile">3c70585353001010d69cddeeff7b1226</analytics_channel>
+        <application_name>User Management</application_name>
+        <bucket_document_id>adccba14c3932210f6e5f3cc05013111</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_metadata_customer_override/>
+        <bucket_table_name>sys_sg_native_client</bucket_table_name>
+        <bucket_type>mobile_agent</bucket_type>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_1130583_custom_a.sys_sg_native_client.adccba14c3932210f6e5f3cc05013111</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-07 18:37:18</sys_created_on>
+        <sys_id>65cc7a14c3932210f6e5f3cc0501316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Management</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_analytics_bucket_65cc7a14c3932210f6e5f3cc0501316a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-07 18:37:18</sys_updated_on>
+    </sys_analytics_bucket>
+</record_update>

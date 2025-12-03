@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_iframe">
+    <content_block_iframe action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <frame_name/>
+        <height>600</height>
+        <logged_on>false</logged_on>
+        <name>TEST</name>
+        <sizing>fixed</sizing>
+        <sys_class_name>content_block_iframe</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 13:29:15</sys_created_on>
+        <sys_id>eaa24651c33bee10f6e5f3cc05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEST</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>content_block_iframe_eaa24651c33bee10f6e5f3cc05013198</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 13:29:15</sys_updated_on>
+        <url>incident_list.do?sysparm_userpref_module=b55b4ab0c0a80009007a9c0f03fb4da9</url>
+        <width>400</width>
+    </content_block_iframe>
+</record_update>

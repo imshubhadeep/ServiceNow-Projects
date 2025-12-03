@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1130583_custom_a.BulkAssigneeChanger</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>BulkAssigneeChanger</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[// var BulkAssigneeChanger = Class.create();
+// BulkAssigneeChanger.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+
+// changeAssignee: function() {
+//         var currentUser = this.getParameter('sysparm_currentUser');
+//         var newUser = this.getParameter('sysparm_newUser');
+
+//         // Resolve user names to sys_ids if needed
+//         var currentUserId = this._getUserSysId(currentUser);
+//         var newUserId = this._getUserSysId(newUser);
+
+//         if (!currentUserId || !newUserId) {
+//             return "Invalid user input.";
+//         }
+
+//         var gr = new GlideRecord('incident');
+//         gr.addQuery('assigned_to', currentUserId);
+//         gr.query();
+
+//         var count = 0;
+//         while (gr.next()) {
+//             gr.assigned_to = newUserId;
+//             gr.update();
+//             count++;
+//         }
+
+//         return count + " incidents updated.";
+//     },
+
+//     _getUserSysId: function(userInput) {
+//         var userGr = new GlideRecord('sys_user');
+//         userGr.addQuery('user_name', userInput); // or use 'name' if you're using full name
+//         userGr.query();
+//         if (userGr.next()) {
+//             return userGr.getValue('sys_id');
+//         }
+//         return null;
+//     },
+
+//     type: 'BulkAssigneeChanger'
+// });
+
+
+var BulkAssigneeChanger = Class.create();
+BulkAssigneeChanger.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    reassignIncidents: function() {
+        var currentUsers = this.getParameter('sysparm_current_users');
+        var newUser = this.getParameter('sysparm_new_user');
+
+        // if (!currentUsers || !newUser) {
+        //     return "Missing user information.";
+        // }
+
+        var userList = currentUsers.split(',');
+        var totalCount = 0;
+
+        for (var i = 0; i < userList.length; i++) {
+            var userId = userList[i].trim();
+
+            var gr = new GlideRecord('incident');
+            gr.addQuery('assigned_to', userId);
+            gr.query();
+
+            while (gr.next()) {
+                gr.assigned_to = newUser;
+                gr.update();
+                totalCount++;
+            }
+        }
+
+        var userGR = new GlideRecord('sys_user');
+        if (userGR.get(newUser)) {
+            return totalCount + " incident(s) reassigned to " + userGR.getDisplayValue();
+        } else {
+            return totalCount + " incident(s) reassigned.";
+        }
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 08:21:53</sys_created_on>
+        <sys_id>c85eadefc358f610f6e5f3cc050131a7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>BulkAssigneeChanger</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_script_include_c85eadefc358f610f6e5f3cc050131a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 09:43:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c85eadefc358f610f6e5f3cc050131a7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 08:21:51</sys_created_on>
+        <sys_id>d74fe56fc398f610f6e5f3cc050131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 08:21:51</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

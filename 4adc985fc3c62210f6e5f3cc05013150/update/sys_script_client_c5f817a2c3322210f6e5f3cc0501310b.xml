@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>category</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>show/hide field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+  // Run this logic both on form load and when the field changes
+  var selectedValue = g_form.getValue('category');
+
+  if (selectedValue === 'option_a') {
+    g_form.setVisible('name', true);
+    g_form.setVisible('approval_state', false);
+  } else if (selectedValue === 'option_b') {
+    g_form.setVisible('name', false);
+    g_form.setVisible('approval_state', true);
+  } else {
+    g_form.setVisible('name', false);
+    g_form.setVisible('approval_state', false);
+  }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-20 23:57:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c5f817a2c3322210f6e5f3cc0501310b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>show/hide field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_script_client_c5f817a2c3322210f6e5f3cc0501310b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-21 00:07:17</sys_updated_on>
+        <table>x_1130583_custom_a_asset_child</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

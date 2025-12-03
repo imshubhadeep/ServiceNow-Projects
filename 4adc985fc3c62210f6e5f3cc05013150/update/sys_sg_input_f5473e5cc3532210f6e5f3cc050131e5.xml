@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="Employee Number">9dc7b69cc3532210f6e5f3cc0501314c</autofill_variable>
+        <category/>
+        <description/>
+        <label>Name</label>
+        <mandatory>true</mandatory>
+        <name>Name</name>
+        <order>100</order>
+        <page display_value="New">eebdfa54c3932210f6e5f3cc05013108</page>
+        <parameter_screen display_value="User Master Document">ad473e5cc3532210f6e5f3cc050131de</parameter_screen>
+        <parameter_section/>
+        <placeholder>Name</placeholder>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-07 18:13:17</sys_created_on>
+        <sys_id>f5473e5cc3532210f6e5f3cc050131e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Name</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_sg_input_f5473e5cc3532210f6e5f3cc050131e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-07 18:45:31</sys_updated_on>
+        <type display_value="Reference">770c605517021010f2b43b9fadb95900</type>
+    </sys_sg_input>
+</record_update>

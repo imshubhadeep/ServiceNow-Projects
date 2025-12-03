@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_programmatic">
+    <content_block_programmatic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>Dashboard</name>
+        <programmatic_content><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="jelly:macro">
+
+    <!-- <div style="solid #ccc; padding:20px; width:400px; height:50%">
+        <p>
+            If you want to change the current contact person in bulk, <br />
+            after entering the contact person, press the Bulk Change Contact Person button.
+        </p>
+
+        <label>Assigned</label><br />
+        <input id="current_assignee" type="text" style="width:90%;" /><br /><br />
+
+        <label>Change Assignee</label><br />
+        <input id="new_assignee" type="text" style="width:90%;" /><br /><br />
+
+        <button id="massUpdateBtn" style="background:red; color:white; padding:10px; border:none; cursor:pointer;" onclick="massUpdateAssignee()">
+            Bulk change of person in charge
+        </button>
+    </div>
+
+
+
+
+    Modal HTML
+    <div id="customModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+        <div style="background-color:#fff; margin:15% auto; padding:20px; border-radius:8px; width:50%; box-shadow:0 5px 15px rgba(0,0,0,0.3); position:relative;">
+            <span onclick="closeModal()" style="position:absolute; top:10px; right:20px; font-size:28px; font-weight:bold; cursor:pointer;">×</span>
+            <p id="modalMessage" style="margin-top:30px;"></p>
+            <div id="modalButtons" style="margin-top:20px; text-align:right;">
+                <button id="confirmYes" style="padding:8px 16px; background-color:green; color:white; border:none; margin-right:10px;">Yes</button>
+                <button onclick="closeModal()" style="padding:8px 16px; background-color:gray; color:white; border:none;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function massUpdateAssignee() {
+            var currentAssignee = document.getElementById('current_assignee').value.trim();
+            var newAssignee = document.getElementById('new_assignee').value.trim();
+
+            if (!currentAssignee || !newAssignee) {
+                showModal("Please enter both current and new assignee usernames.");
+                return;
+            }
+
+
+
+            // Show confirmation popup
+            var confirmation = window.confirm("Are you sure you want to reassign incidents from " + currentAssignee + " to " + newAssignee + "?");
+
+            if (!confirmation) {
+                showModal("Bulk update cancelled.");
+                return;
+            }
+
+            var ga = new GlideAjax('BulkAssigneeChanger');
+            ga.addParam('sysparm_name', 'changeAssignee');
+            ga.addParam('sysparm_currentUser', currentAssignee);
+            ga.addParam('sysparm_newUser', newAssignee);
+
+            ga.getXMLAnswer(function(response) {
+                showModal(response);
+            });
+        }
+
+        function showModal(message) {
+            document.getElementById('modalMessage').innerText = message;
+            document.getElementById('customModal').style.display = 'block';
+            document.getElementById('modalButtons').style.display = showConfirmButtons ? 'block' : 'none';
+
+
+            if (showConfirmButtons) {
+                document.getElementById('confirmYes').onclick = function() {
+                    closeModal();
+                    massUpdateAssignee();
+                };
+
+            }
+
+            function closeModal() {
+                document.getElementById('customModal').style.display = 'none';
+            }
+
+
+
+
+
+
+        let currentAssignee = '';
+        let newAssignee = '';
+
+        function prepareConfirmation() {
+            currentAssignee = document.getElementById('current_assignee').value.trim();
+            newAssignee = document.getElementById('new_assignee').value.trim();
+
+            if (!currentAssignee || !newAssignee) {
+                showModal("Please enter both current and new assignee usernames.", false);
+                return;
+            }
+
+            const message = "Are you sure you want to reassign incidents from " + currentAssignee + " to " + newAssignee + "?";
+            showModal(message, true);
+        }
+
+        function massUpdateAssignee() {
+            var ga = new GlideAjax('BulkAssigneeChanger');
+            ga.addParam('sysparm_name', 'changeAssignee');
+            ga.addParam('sysparm_currentUser', currentAssignee);
+            ga.addParam('sysparm_newUser', newAssignee);
+
+            ga.getXMLAnswer(function(response) {
+                showModal(response, false);
+            });
+        }
+
+        function showModal(message, showConfirmButtons) {
+            document.getElementById('modalMessage').innerText = message;
+            document.getElementById('customModal').style.display = 'block';
+            document.getElementById('modalButtons').style.display = showConfirmButtons ? 'block' : 'none';
+
+            if (showConfirmButtons) {
+                document.getElementById('confirmYes').onclick = function () {
+                    closeModal();
+                    massUpdateAssignee();
+                };
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').style.display = 'none';
+        }
+
+    </script>
+	-->
+
+	
+    <div style="border:solid #ccc; padding:20px; width:400px;">
+        <p>
+            If you want to change the current contact person in bulk, <br />
+            after entering the contact person, press the Bulk Change Contact Person button.
+        </p>
+
+        <label>Assigned</label><br />
+        <input id="current_assignee" type="text" style="width:90%;" /><br /><br />
+
+        <label>Change Assignee</label><br />
+        <input id="new_assignee" type="text" style="width:90%;" /><br /><br />
+
+        <button id="massUpdateBtn" style="background:red; color:white; padding:10px; border:none; cursor:pointer;" onclick="prepareConfirmation()">
+            Bulk change of person in charge
+        </button>
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="customModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+        <div style="background-color:#fff; margin:15% auto; padding:20px; border-radius:8px; width:50%; box-shadow:0 5px 15px rgba(0,0,0,0.3); position:relative;">
+            <span onclick="closeModal()" style="position:absolute; top:10px; right:20px; font-size:28px; font-weight:bold; cursor:pointer;">×</span>
+            <p id="modalMessage" style="margin-top:30px;"></p>
+            <div id="modalButtons" style="margin-top:20px; text-align:right;">
+                <button id="confirmYes" style="padding:8px 16px; background-color:green; color:white; border:none; margin-right:10px;">Yes</button>
+                <button onclick="closeModal()" style="padding:8px 16px; background-color:gray; color:white; border:none;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentAssignee = '';
+        let newAssignee = '';
+
+        function prepareConfirmation() {
+            currentAssignee = document.getElementById('current_assignee').value.trim();
+            newAssignee = document.getElementById('new_assignee').value.trim();
+
+            if (!currentAssignee || !newAssignee) {
+                showModal("Please enter both current and new assignee usernames.", false);
+                return;
+            }
+
+            const message = "Are you sure you want to reassign incidents from " + currentAssignee + " to " + newAssignee + "?";
+            showModal(message, true);
+        }
+
+        function massUpdateAssignee() {
+            var ga = new GlideAjax('BulkAssigneeChanger');
+            ga.addParam('sysparm_name', 'changeAssignee');
+            ga.addParam('sysparm_currentUser', currentAssignee);
+            ga.addParam('sysparm_newUser', newAssignee);
+
+            ga.getXMLAnswer(function(response) {
+                showModal(response, false);
+            });
+        }
+
+        function showModal(message, showConfirmButtons) {
+            document.getElementById('modalMessage').innerText = message;
+            document.getElementById('customModal').style.display = 'block';
+            document.getElementById('modalButtons').style.display = showConfirmButtons ? 'block' : 'none';
+
+            if (showConfirmButtons) {
+                document.getElementById('confirmYes').onclick = function () {
+                    closeModal();
+                    massUpdateAssignee();
+                };
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').style.display = 'none';
+        }
+    </script>
+
+
+</j:jelly>]]></programmatic_content>
+        <sys_class_name>content_block_programmatic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-25 06:11:01</sys_created_on>
+        <sys_id>7a9760c0c3107a10f6e5f3cc050131a2</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Dashboard</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>content_block_programmatic_7a9760c0c3107a10f6e5f3cc050131a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 03:24:09</sys_updated_on>
+        <two_phase>false</two_phase>
+    </content_block_programmatic>
+</record_update>

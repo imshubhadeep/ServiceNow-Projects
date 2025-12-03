@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fc0941b4c3c4fe50f6e5f3cc0501312e" extends="task" label="Dgroup Demo" max_length="40" name="x_1130583_custom_a_dgroup_demo" type="collection">
+        <element label="Assignee" max_length="32" name="u_assignee" reference="sys_user" type="reference"/>
+        <element label="Dept Assignee" max_length="32" name="u_dept_assignee" read_only="true" type="string"/>
+        <element label="Dept User" max_length="32" name="u_dept_user" read_only="true" type="string"/>
+        <element label="Name" max_length="255" name="u_name" type="string"/>
+        <element label="Created_Date" max_length="40" name="u_created_date_from_user_master" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;    // return current.u_created_user_master.sys_created_on;&#13;&#10;&#13;&#10;})(current);" label="Created_user_Master" max_length="32" name="u_created_user_master" read_only="true" reference="x_1130583_custom_a_user_master_document" type="reference"/>
+    </element>
+</database>

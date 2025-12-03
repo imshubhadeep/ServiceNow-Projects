@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="db68469bc3e3a610f6e5f3cc05013123" sys_domain="global" table="x_1130583_custom_a_user_master_document" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 08:46:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df68469bc3e3a610f6e5f3cc05013127</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1130583_custom_a_user_master_document" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">db68469bc3e3a610f6e5f3cc05013123</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">343846d3c3872210f6e5f3cc0501310c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 08:46:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 08:46:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a978469bc3e3a610f6e5f3cc050131a5</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1130583_custom_a_user_master_document" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">db68469bc3e3a610f6e5f3cc05013123</sys_ui_form>
+            <sys_ui_section caption="section1" display_value="section1" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">ed78469bc3e3a610f6e5f3cc050131a2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 08:46:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 08:46:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f68469bc3e3a610f6e5f3cc05013128</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1130583_custom_a_user_master_document" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">db68469bc3e3a610f6e5f3cc05013123</sys_ui_form>
+            <sys_ui_section caption="section2" display_value="section2" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">df68469bc3e3a610f6e5f3cc05013121</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 08:46:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-04 14:23:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8718540dc3c5f210f6e5f3cc0501317c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1130583_custom_a_user_master_document" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">db68469bc3e3a610f6e5f3cc05013123</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_1130583_custom_a_user_master_document" sys_domain="global" view="Default view">b218140dc3c5f210f6e5f3cc050131ef</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-04 14:23:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1130583_custom_a_user_master_document</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-29 08:46:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db68469bc3e3a610f6e5f3cc05013123</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1130583_custom_a_user_master_document</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+            <sys_update_name>sys_ui_form_sections_db68469bc3e3a610f6e5f3cc05013123</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-29 08:46:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

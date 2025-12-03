@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="New Tab 2">b553266bc3387250f6e5f3cc050131bb</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2025-10-31 01:40:47">5063aa6bc3387250f6e5f3cc050131b6</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-31 08:40:47</sys_created_on>
+        <sys_id>dc63aa6bc3387250f6e5f3cc050131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b553266bc3387250f6e5f3cc050131bb</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_dc63aa6bc3387250f6e5f3cc050131b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-31 08:40:47</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_1130583_custom_a_user_master_document">u_nothingISEMPTY^EQ<item endquery="false" field="u_nothing" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	g_form.setSectionDisplay('section1', true);
+	g_form.setSectionDisplay('section2', true);
+}]]></script_false>
+        <script_true><![CDATA[	function onCondition() {
+		g_form.setSectionDisplay('section1', false);
+		g_form.setSectionDisplay('section2', false);
+	}]]></script_true>
+        <set_values/>
+        <short_description>show/ hide sections</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-02 06:09:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ceda02ecc3332e10f6e5f3cc0501318d</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>show/ hide sections</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_ui_policy_ceda02ecc3332e10f6e5f3cc0501318d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-02 07:13:59</sys_updated_on>
+        <table>x_1130583_custom_a_user_master_document</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description>TESTING</description>
+        <media_type/>
+        <name>dashboard_links_widget</name>
+        <scoped_name>x_1130583_custom_a_dashboard_links_widget</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-25 06:07:49</sys_created_on>
+        <sys_id>3965e400c3107a10f6e5f3cc0501310e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>dashboard_links_widget</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_update_name>sys_ui_macro_3965e400c3107a10f6e5f3cc0501310e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-25 08:00:13</sys_updated_on>
+        <xml><![CDATA[<j:jelly xmlns:j="jelly:core" xmlns:g="glide">
+<!-- Button -->
+<button onclick="showPopup()" class="btn btn-primary">Open Link</button>
+<!-- Popup window -->
+<div id="popupWindow"
+      style="display:none; position:fixed; top:30%; left:40%; background:#fff; border:1px solid #ccc; padding:20px; z-index:1000;">
+<p>Click below to go to the page:</p>
+<a href="https://dusekenc.com/?ref=pafolios" target="_blank">Go to Page</a>
+<br/>
+<button onclick="closePopup()" class="btn btn-secondary">Close</button>
+</div>
+<!-- Script -->
+<script type="text/javascript">
+   function showPopup() {
+     document.getElementById('popupWindow').style.display = 'block';
+   }
+   function closePopup() {
+     document.getElementById('popupWindow').style.display = 'none';
+   }
+</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</application>
+        <file_path/>
+        <instance_id>7d33805c3bbf8ad4986d048aa4e45ae4</instance_id>
+        <instance_name>dev283179</instance_name>
+        <name>sys_ui_macro_3965e400c3107a10f6e5f3cc0501310e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description&gt;TESTING&lt;/description&gt;&lt;media_type/&gt;&lt;name&gt;dashboard_links_widget&lt;/name&gt;&lt;scoped_name&gt;x_1130583_custom_a_dashboard_links_widget&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-25 06:07:49&lt;/sys_created_on&gt;&lt;sys_id&gt;3965e400c3107a10f6e5f3cc0501310e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;dashboard_links_widget&lt;/sys_name&gt;&lt;sys_package display_value="Custom Asset Management" source="x_1130583_custom_a"&gt;4adc985fc3c62210f6e5f3cc05013150&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Custom Asset Management"&gt;4adc985fc3c62210f6e5f3cc05013150&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_3965e400c3107a10f6e5f3cc0501310e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-25 08:00:13&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;j:jelly xmlns:j="jelly:core" xmlns:g="glide"&gt;
+&lt;!-- Button --&gt;
+&lt;button onclick="showPopup()" class="btn btn-primary"&gt;Open Link&lt;/button&gt;
+&lt;!-- Popup window --&gt;
+&lt;div id="popupWindow"
+      style="display:none; position:fixed; top:30%; left:40%; background:#fff; border:1px solid #ccc; padding:20px; z-index:1000;"&gt;
+&lt;p&gt;Click below to go to the page:&lt;/p&gt;
+&lt;a href="https://dusekenc.com/?ref=pafolios" target="_blank"&gt;Go to Page&lt;/a&gt;
+&lt;br/&gt;
+&lt;button onclick="closePopup()" class="btn btn-secondary"&gt;Close&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Script --&gt;
+&lt;script type="text/javascript"&gt;
+   function showPopup() {
+     document.getElementById('popupWindow').style.display = 'block';
+   }
+   function closePopup() {
+     document.getElementById('popupWindow').style.display = 'none';
+   }
+&lt;/script&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1125200164</payload_hash>
+        <record_name>dashboard_links_widget</record_name>
+        <reverted_from/>
+        <source>3d8d9c1fc3c62210f6e5f3cc050131df</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-25 08:00:13</sys_created_on>
+        <sys_id>07d0c140c3907a10f6e5f3cc0501317d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1997fe317e50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-25 08:00:13</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>4bd0c1401f907a102c709877e02c677c</update_guid>
+        <update_guid_history>4bd0c1401f907a102c709877e02c677c:-1125200164,f02728801b107a10290ea8115f20e659:-1217542961</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-25 09:20:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>0d232c95c3834600840190a729040000</sys_id>
+        <sys_metadata>3965e400c3107a10f6e5f3cc0501310e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dashboard_links_widget</sys_name>
+        <sys_package display_value="Custom Asset Management" source="x_1130583_custom_a">4adc985fc3c62210f6e5f3cc05013150</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Custom Asset Management">4adc985fc3c62210f6e5f3cc05013150</sys_scope>
+        <sys_scope_delete display_value="">216aad2cb7864bd48a408ee74b5b0210</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_3965e400c3107a10f6e5f3cc0501310e</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_3965e400c3107a10f6e5f3cc0501310e">07d0c140c3907a10f6e5f3cc0501317d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-25 09:20:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

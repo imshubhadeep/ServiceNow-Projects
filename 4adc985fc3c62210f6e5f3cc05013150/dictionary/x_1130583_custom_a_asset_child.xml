@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9dff5493c30a2210f6e5f3cc0501315e" extends="x_1130583_custom_a_asset_parent" label="Asset Child" max_length="40" name="x_1130583_custom_a_asset_child" type="collection">
+        <element label="Profile Picture" max_length="40" name="u_profile_picture" type="user_image"/>
+        <element label="Warranty Expiry" max_length="40" name="warranty_expiry" type="glide_date"/>
+        <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
+        <element label="Employee Number" max_length="40" name="employee_number" type="integer"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Name1" max_length="4000" name="u_name1" reference="x_1130583_custom_a_user_master_document" type="glide_list"/>
+    </element>
+</database>
